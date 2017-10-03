@@ -6,24 +6,16 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link
-                    {!! ($page == 'home') ? ' active' : '' !!}
-                " href="/">Home</span></a>
+                <a class="nav-link {!! ($page == 'home') ? 'active' : '' !!}" href="/">Home</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link
-                    {!! ($page == 'patterns') ? ' active' : '' !!}
-                " href="/patterns">Patterns</a>
+                <a class="nav-link {!! ($page == 'patterns') ? ' active' : '' !!}" href="/patterns">Patterns</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link
-                   {!! ($page == 'about') ? ' active' : '' !!}
-                " href="/about">About</a>
+                <a class="nav-link{!! ($page == 'about') ? ' active' : '' !!}" href="/about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link
-                   {!! ($page == 'contact') ? ' active' : '' !!}
-                " href="/contact">Contact</a>
+                <a class="nav-link{!! ($page == 'contact') ? ' active' : '' !!}" href="/contact">Contact</a>
             </li>
         </ul>
     </div>

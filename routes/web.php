@@ -11,33 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home', [
-        'page' => 'home',
-        'title' => 'Home'
-    ]);
-});
+Route::get('/', 'HomeController');
 
-Route::get('/patterns', function () {
-    $page = 'patterns';
-    return view('patterns', [
-        'page' => 'patterns',
-        'title' => 'Patterns'
-    ]);
-});
+Route::get('/patterns', 'PatternsController');
 
-Route::get('/about', function () {
-    $page = 'about';
-    return view('about', [
-        'page' => 'about',
-        'title' => 'About the Artist'
-    ]);
-});
+// https://api.ravelry.com/patterns/search.json?designer=handiworks-ltd
 
-Route::get('/contact', function () {
-    $page = 'contact';
-    return view('contact', [
-        'page' => 'contact',
-        'title' => 'Contact the Artist'
-    ]);
-});
+Route::get('/about', 'AboutController');
+
+Route::get('/contact', 'ContactController');
