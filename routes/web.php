@@ -13,9 +13,9 @@
 
 Route::get('/', 'HomeController');
 
-Route::get('/patterns', 'PatternsController');
+Route::get('/patterns', 'PatternsController@list');
 
-// https://api.ravelry.com/patterns/search.json?designer=handiworks-ltd
+Route::get('/patterns/{id}', 'PatternsController@show($id)');
 
 Route::get('/about', 'AboutController');
 

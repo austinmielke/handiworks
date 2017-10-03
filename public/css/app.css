@@ -120,6 +120,44 @@ footer p {
   text-decoration: none;
 }
 
+#patterns-list {
+  margin-bottom: 2rem;
+}
+
+#patterns-list .card {
+  margin-bottom: 1em;
+  border-color: #4D3216;
+  padding: 0.5em;
+}
+
+#patterns-list .card .image {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+  margin-bottom: 0.5em;
+}
+
+#patterns-list .card .image img {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+#patterns-list .card .card-block .btn-primary {
+  background: #4D3216;
+  border: none;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+#patterns-list .card .card-block .btn-primary:hover {
+  color: #B99057;
+}
+
 #about {
   margin-bottom: 2rem;
 }
