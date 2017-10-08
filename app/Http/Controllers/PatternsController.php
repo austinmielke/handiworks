@@ -8,7 +8,7 @@ use GuzzleHttp\Client;
 class PatternsController extends Controller
 {
 
-    protected function getPatterns()
+    protected function getPatternsList()
     {
         $login = env('RAVELRY_API_ACCESS_KEY');
         $password = env('RAVELRY_API_PERSONAL_KEY');
@@ -24,11 +24,37 @@ class PatternsController extends Controller
         return $patterns;
     }
 
-        public function list() 
-        { 
-            $page = 'patterns'; 
-            $title = 'Patterns'; 
-            $patterns = $this->getPatterns(); 
-            
-            return view('patterns', compact(['page', 'title', 'patterns'])); }
+    protected function getPatternInfo($id)
+    {
+        $login = env('RAVELRY_API_ACCESS_KEY');
+        $password = env('RAVELRY_API_PERSONAL_KEY');
+        $url = 'https://api.ravelry.com/patterns/' . $id . '.json';
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL,$url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        curl_setopt($ch, CURLOPT_USERPWD, "$login:$password");
+        $results = json_decode(curl_exec($ch));
+        curl_close($ch);
+        $pattern = $results->pattern;
+        return $pattern;
+    }
+
+    public function list() 
+    { 
+        $patterns = $this->getPatternsList();
+        $page = 'patterns'; 
+        $title = 'Patterns';  
+        
+        return view('patternList', compact(['page', 'title', 'patterns'])); 
+    }
+
+    public function show($id)
+    {
+        $pattern = $this->getPatternInfo($id);
+        $page = 'patterns'; 
+        $title = $pattern->name;
+        
+        return view('pattern', compact(['page', 'title', 'pattern'])); 
+    }
 }

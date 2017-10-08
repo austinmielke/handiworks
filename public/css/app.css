@@ -120,13 +120,9 @@ footer p {
   text-decoration: none;
 }
 
-#patterns-list {
-  margin-bottom: 2rem;
-}
-
 #patterns-list .card {
-  margin-bottom: 1em;
-  border-color: #4D3216;
+  margin-bottom: 2em;
+  border: none;
   padding: 0.5em;
 }
 
@@ -148,14 +144,51 @@ footer p {
 }
 
 #patterns-list .card .card-block .btn-primary {
-  background: #4D3216;
+  background: #B99057;
   border: none;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
 #patterns-list .card .card-block .btn-primary:hover {
+  background: #4D3216;
+}
+
+#pattern .breadcrumb {
+  background: none;
+}
+
+#pattern .breadcrumb .breadcrumb-item {
   color: #B99057;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+#pattern .breadcrumb .breadcrumb-item:hover {
+  color: #4D3216;
+}
+
+#pattern .description {
+  margin-bottom: 2em;
+}
+
+#pattern .description h1 {
+  font-size: 2em;
+}
+
+#pattern .description .btn-primary {
+  background: #B99057;
+  border: none;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+#pattern .description .btn-primary:hover {
+  background: #4D3216;
+}
+
+#pattern .image {
+  margin-bottom: 2em;
 }
 
 #about {

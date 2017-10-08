@@ -15,7 +15,8 @@ Route::get('/', 'HomeController');
 
 Route::get('/patterns', 'PatternsController@list');
 
-Route::get('/patterns/{id}', 'PatternsController@show($id)');
+Route::get('/patterns/{id}', 'PatternsController@show');
+// 630331
 
 Route::get('/about', 'AboutController');
 
