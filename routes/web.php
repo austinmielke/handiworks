@@ -11,13 +11,14 @@
 |
 */
 
-Route::get('/', 'HomeController');
+Route::get('/', 'PagesController@getHome');
 
 Route::get('/patterns', 'PatternsController@list');
 
 Route::get('/patterns/{id}', 'PatternsController@show');
-// 630331
 
-Route::get('/about', 'AboutController');
+Route::get('/about', 'PagesController@getAbout');
 
-Route::get('/contact', 'ContactController');
+Route::get('/contact', 'PagesController@getContact');
+
+Route::post('/contact', 'PagesController@postContact');

@@ -7,19 +7,36 @@
         
             <div class="col-sm-12 col-md-8">
                 <h1 class="text-center">{{ $title }}</h1>
-                <form action="POST">
+                <form action="{{ url('contact') }}" method="POST">
+                    {{ csrf_field() }}
+
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="text" class="form-control" id="name">
+                        <input type="text" name="name" id="name" class="form-control">
                     </div>
+
                     <div class="form-group">
                         <label for="email">Email Address:</label>
-                        <input type="text" class="form-control" id="email">
+                        <input type="text" name="email" id="email" class="form-control">
                     </div>
+
                     <div class="form-group">
                         <label for="body">Message:</label>
-                        <textarea class="form-control" id="body" rows="5"></textarea>
+                        <textarea name="bodyMessage" id="bodyMessage" rows="5" class="form-control"></textarea>
                     </div>
+
+                    @if (count($errors))
+                        <div class="form-group">
+                            <div class="alert alert-danger">
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                            </div>
+                        </div>
+                    @endif
+
+                    <button class="btn btn-success">Send Message</button>
+
                 </form>
             </div>
 
