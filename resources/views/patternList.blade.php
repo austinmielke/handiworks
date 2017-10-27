@@ -12,7 +12,7 @@
                         <div class="card text-center">
                             <div class="image">
                                 <a href="/patterns/{!! $pattern->id !!}">
-                                    <img class="img-fluid" src="{!! $pattern->first_photo->medium2_url !!}" alt="{!! $pattern->name !!} by Judy M. Ellis, Handiwords Ltd LLC">
+                                    <img src="{!! $pattern->first_photo->medium2_url !!}" alt="{!! $pattern->name !!} by Judy M. Ellis, Handiwords Ltd LLC">
                                 </a>
                             </div>
                             <div class="card-block">
