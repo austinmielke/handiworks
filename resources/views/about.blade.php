@@ -8,23 +8,64 @@
                 <img class="img-fluid" src="img/portrait.jpg" alt="Photo of Judy M. Ellis">
             </div>
             <div class="col-sm-8">
+
                 <h1 class="text-center">{{ $title }}</h1>
-                <p>Judy is a lifelong fiber artist who, taught by her grandmothers, is experienced in knitting, crochet, spinning,
-                    design and pattern writing. Details in the work bring her joy. She is a test/sample knitter for many renowned
-                    designers and companies.</p>
-                <p>Born and raised on a farm in the upper Great Plains, Judy has taken her lifelong fiber skills to the heights
-                    some knitters only dream of. She has designed knitting patterns, many of which are currently available online.
-                    The sample sweaters she has knitted for an international knitting magazine have been photographed and published,
-                    some featured on the magazine covers. Judy knits professionally for high profile knitwear designers and yarn
-                    companies. She teaches both in class format and privately and judges fiber and needlework at the local county
-                    fair.</p>
-                <p>Judy has many skills including the patience to break down a knitted piece and translate it to graph for professional
-                    designers for publication. She also is a caring teacher, support and friend to her many knitting buddies.
-                    Tuesday evenings she can be found at her local knit night which she has attended since the group started
-                    in1999. She enjoys the challenge of helping other knitters find and repair errors and accidental “design
-                    features”. She is also an excellent spinner and has many antique spinning wheels.</p>
-                <p>Judy and her husband have two daughters, four granddaughters and one grandson. Three of the granddaughters were
-                    taught to knit by their Grandma Judy while still in grade school. Judy’s grandmothers would be proud.</p>
+                <p>Starting in 1984 Handiworks Ltd. began as a craft business doing antique reproduction needle arts. Ventures included various craft shows around the region always focused on fiber arts in one form or another. Currently Handiworks focuses on knitting and crochet pattern designs.</p>
+
+                <p>Judy Ellis is a lifelong knitter and crocheter. She was literally taught at the knee of both of her grandmothers who never used written patterns.</p>
+
+                <hr>
+
+                <h3 class="text-center">Services Offered:</h2>
+
+                <div class="container">
+                    <div class="row justify-content-around">
+    
+                        <div class="card col-lg-5">
+                            <div class="card-body">
+                                <h4 class="text-center card-title">Teaching</h4>
+                                <p class="card-text">Judy will create a single session or series of knit or crochet classes for presentation to individuals or groups. Examples of classes include: beginning knit or crochet, reading charts, lace, fair isle, colorwork, socks, etc.</p>
+                            </div>
+                        </div>
+    
+                        <div class="card col-lg-5">
+                            <div class="card-body">
+                                <h4 class="text-center card-title">Custom Knit or Crochet</h4>
+                                <p class="card-text">Have a design you'd like made, but don't have the time? Judy will work with you to determin yarn, labor costs and timelines.</p>
+                            </div>
+                        </div>
+    
+                        <div class="card col-lg-5">
+                            <div class="card-body">
+                                <h4 class="text-center card-title">Sample Knit or Crochet</h4>
+                                <p class="card-text">Knit or crochet a sample of your design. Need an additional piece to send with a trunk show? Or an item test knit or crocheted before the pattern is release? Designers can hire Judy to knit or crochet a sample of your design.</p>
+                            </div>
+                        </div>
+    
+                        <div class="card col-lg-5">
+                            <div class="card-body">
+                                <h4 class="text-center card-title">Knit or Crochet Design</h4>
+                                <p class="card-text">Judy works with yarn manufactures and companies to create elegant garments and designs.</p>
+                            </div>
+                        </div>
+    
+                        <div class="card col-lg-5">
+                            <div class="card-body">
+                                <h4 class="text-center card-title">Repair Knit or Crocheted Items</h4>
+                                <p class="card-text">Have an item that has a hole or is a bit worn out? Judy has the skills ot repair it for you.</p>
+                            </div>
+                        </div>
+    
+                        <div class="card col-lg-5">
+                            <div class="card-body">
+                                <h4 class="text-center card-title">Tech and Copy Editing</h4>
+                                <p class="card-text">Ensure your pattern is ready for publishing by having Judy as a second set of eyes to proofread, tech and copy edit, as well as checking the numbers to make sure they work.</p>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
 
             </div>
         </div>

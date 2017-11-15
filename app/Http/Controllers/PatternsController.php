@@ -12,7 +12,7 @@ class PatternsController extends Controller
     {
         $login = env('RAVELRY_API_ACCESS_KEY');
         $password = env('RAVELRY_API_PERSONAL_KEY');
-        $url = 'https://api.ravelry.com/patterns/search.json?designer=handiworks-ltd';
+        $url = 'https://api.ravelry.com/patterns/search.json?designer=Handiworks+LTD';
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,$url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);

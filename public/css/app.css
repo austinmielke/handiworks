@@ -203,6 +203,16 @@ footer p {
   border: 3px solid #4D3216;
 }
 
+#about .card {
+  border-color: #4D3216;
+  background-color: #4D3216;
+  margin-bottom: 2em;
+}
+
+#about .card .card-body {
+  color: #FFF;
+}
+
 #contact {
   margin-bottom: 2rem;
 }
