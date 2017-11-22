@@ -52,6 +52,11 @@
                             <i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook
                         </a>
                     </li>
+                    <li>
+                        <a href="https://twitter.com/HandiworksLtd?lang=en" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+                        </a>
+                    </li>
                 </ul>
             </div>
 
