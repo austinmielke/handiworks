@@ -57,6 +57,11 @@
                             <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
                         </a>
                     </li>
+                    <li>
+                        <a href="https://www.instagram.com/handiworksltd/" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
+                        </a>
+                    </li>
                 </ul>
             </div>
 

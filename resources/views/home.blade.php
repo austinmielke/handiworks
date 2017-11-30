@@ -5,16 +5,6 @@
     <section class="container">
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <p class="lead">Starting in 1984 Handiworks Ltd. began as a craft business doing antique reproduction needle arts. Ventures included
-                    various craft shows around the region always focused on fiber arts in one form or another. Currently Handiworks
-                    focuses on knitting and crochet pattern designs.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10">
                 <h1 class="carousel-title">Featured Patterns</h1>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -34,7 +24,7 @@
                             <img class="img-fluid" src="img/carousel/2.jpg" alt="Second slide">
                             <div class="carousel-caption">
                                 <h3><a href="/patterns/546397">Phoenix Rising</a></h3>
-                                <p class="d-none d-sm-block">The dramatic, iconic phoenix has been the symbol of strength and majesty since the dawn of time</p>
+                                <p class="d-none d-sm-block">A statement shawl using only knit and purl stitches.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -54,6 +44,18 @@
                 <span class="sr-only">Next</span>
             </a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="container mb-4">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <p class="lead">Starting in 1984 Handiworks Ltd. began as a craft business doing antique reproduction needle arts. Ventures included
+                    various regional craft shows always focused on fiber arts in one form or another. Currently Handiworks
+                    focuses on knitting and crochet pattern designs.</p>
             </div>
         </div>
     </section>

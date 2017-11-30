@@ -1,8 +1,12 @@
-<p>You have a message from <strong>{{ $name }}</strong>!</p>
+<p><strong>{{ $name }}</strong> said:</p>
+
+<br>
 
 <div>
-	<strong>{{ $bodyMessage }}</strong>
+	<p>{{ $bodyMessage }}</p>
 </div>
+
+<br>
 
 <p>Sent from <a href="mailto:{{ $email }}">{{ $email }}</a>.</p>
 

@@ -46,7 +46,7 @@ class PagesController extends Controller
             'bodyMessage' => $request->bodyMessage
         ];
 
-        Mail::to($request->email)->send(new Contact($data));
+        Mail::to('contact.handiworksltd@gmail.com')->send(new Contact($data));
 
         return redirect('/');
     }

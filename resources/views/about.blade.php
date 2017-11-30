@@ -10,7 +10,7 @@
             <div class="col-sm-8">
 
                 <h1 class="text-center">{{ $title }}</h1>
-                <p>Starting in 1984 Handiworks Ltd. began as a craft business doing antique reproduction needle arts. Ventures included various craft shows around the region always focused on fiber arts in one form or another. Currently Handiworks focuses on knitting and crochet pattern designs.</p>
+                <p>Starting in 1984 Handiworks Ltd. began as a craft business doing antique reproduction needle arts. Ventures included various regional craft shows always focused on fiber arts in one form or another. Currently Handiworks focuses on knitting and crochet pattern designs.</p>
 
                 <p>Judy Ellis is a lifelong knitter and crocheter. She was literally taught at the knee of both of her grandmothers who never used written patterns.</p>
 
@@ -20,6 +20,13 @@
 
                 <div class="container">
                     <div class="row justify-content-around">
+
+                        <div class="card col-lg-5">
+                            <div class="card-body">
+                                <h4 class="text-center card-title">Knit or Crochet Design</h4>
+                                <p class="card-text">Judy works with yarn manufactures and companies to create elegant garments and designs.</p>
+                            </div>
+                        </div>
     
                         <div class="card col-lg-5">
                             <div class="card-body">
@@ -30,29 +37,15 @@
     
                         <div class="card col-lg-5">
                             <div class="card-body">
-                                <h4 class="text-center card-title">Custom Knit or Crochet</h4>
-                                <p class="card-text">Have a design you'd like made, but don't have the time? Judy will work with you to determin yarn, labor costs and timelines.</p>
-                            </div>
-                        </div>
-    
-                        <div class="card col-lg-5">
-                            <div class="card-body">
                                 <h4 class="text-center card-title">Sample Knit or Crochet</h4>
                                 <p class="card-text">Knit or crochet a sample of your design. Need an additional piece to send with a trunk show? Or an item test knit or crocheted before the pattern is release? Designers can hire Judy to knit or crochet a sample of your design.</p>
                             </div>
                         </div>
-    
+
                         <div class="card col-lg-5">
                             <div class="card-body">
-                                <h4 class="text-center card-title">Knit or Crochet Design</h4>
-                                <p class="card-text">Judy works with yarn manufactures and companies to create elegant garments and designs.</p>
-                            </div>
-                        </div>
-    
-                        <div class="card col-lg-5">
-                            <div class="card-body">
-                                <h4 class="text-center card-title">Repair Knit or Crocheted Items</h4>
-                                <p class="card-text">Have an item that has a hole or is a bit worn out? Judy has the skills ot repair it for you.</p>
+                                <h4 class="text-center card-title">Custom Knit or Crochet</h4>
+                                <p class="card-text">Have a design you'd like made, but don't have the time? Judy will work with you to determin yarn, labor costs and timelines.</p>
                             </div>
                         </div>
     
@@ -62,7 +55,13 @@
                                 <p class="card-text">Ensure your pattern is ready for publishing by having Judy as a second set of eyes to proofread, tech and copy edit, as well as checking the numbers to make sure they work.</p>
                             </div>
                         </div>
-    
+
+                        <div class="card col-lg-5">
+                            <div class="card-body">
+                                <h4 class="text-center card-title">Repair Knit or Crocheted Items</h4>
+                                <p class="card-text">Have an item that has a hole or is a bit worn out? Judy has the skills to repair it for you.</p>
+                            </div>
+                        </div>
     
                     </div>
                 </div>
