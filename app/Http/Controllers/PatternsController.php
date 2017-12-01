@@ -10,9 +10,9 @@ class PatternsController extends Controller
 
     protected function getPatternsList()
     {
-        $login = env('RAVELRY_API_ACCESS_KEY');
-        $password = env('RAVELRY_API_PERSONAL_KEY');
-        $url = 'https://api.ravelry.com/patterns/search.json?designer=Handiworks+LTD';
+        $login = config('ravelry_api.ACCESS_KEY');
+        $password = config('ravelry_api.PERSONAL_KEY');
+        $url = config('ravelry_api.BASE_URL') . 'search.json?designer=Handiworks+LTD';
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,$url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
@@ -26,9 +26,9 @@ class PatternsController extends Controller
 
     protected function getPatternInfo($id)
     {
-        $login = env('RAVELRY_API_ACCESS_KEY');
-        $password = env('RAVELRY_API_PERSONAL_KEY');
-        $url = 'https://api.ravelry.com/patterns/' . $id . '.json';
+        $login = config('ravelry_api.ACCESS_KEY');
+        $password = config('ravelry_api.PERSONAL_KEY');
+        $url = config('ravelry_api.BASE_URL') . $id . '.json';
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,$url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
