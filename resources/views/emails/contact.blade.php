@@ -8,5 +8,5 @@
 
 <br>
 
-<p>Sent from <a href="mailto:{{ $email }}">{{ $email }}</a>.</p>
+<p><em>Sent from <a href="mailto:{{ $email }}">{{ $email }}</a>.</em></p>
 
