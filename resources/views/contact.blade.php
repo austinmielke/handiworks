@@ -7,7 +7,7 @@
         
             <div class="col-sm-12 col-md-8">
                 <h1 class="text-center">{{ $title }}</h1>
-                <form action="{{ url('contact') }}" method="POST">
+                <form class="mb-4" action="{{ url('contact') }}" method="POST">
                     {{ csrf_field() }}
 
                     <div class="form-group">
