@@ -13,14 +13,22 @@ class PatternsController extends Controller
         $login = config('ravelry_api.ACCESS_KEY');
         $password = config('ravelry_api.PERSONAL_KEY');
         $url = config('ravelry_api.BASE_URL') . 'search.json?designer=Handiworks+LTD';
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL,$url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-        curl_setopt($ch, CURLOPT_USERPWD, "$login:$password");
-        $result = json_decode(curl_exec($ch));
-        $patterns = array_reverse($result->patterns);
-        curl_close($ch);
+
+        // $ch = curl_init();
+        // curl_setopt($ch, CURLOPT_URL,$url);
+        // curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+        // curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        // curl_setopt($ch, CURLOPT_USERPWD, "$login:$password");
+        // $result = json_decode(curl_exec($ch));
+        // $patterns = array_reverse($result->patterns);
+        // curl_close($ch);
+
+        $client = new Client();
+        $res = $client->request('GET', $url, [
+            'auth' => [$login, $password]
+        ]);
+        $patterns = json_decode($res->getBody())->patterns;
+
         return $patterns;
     }
 
@@ -29,14 +37,21 @@ class PatternsController extends Controller
         $login = config('ravelry_api.ACCESS_KEY');
         $password = config('ravelry_api.PERSONAL_KEY');
         $url = config('ravelry_api.BASE_URL') . $id . '.json';
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL,$url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-        curl_setopt($ch, CURLOPT_USERPWD, "$login:$password");
-        $results = json_decode(curl_exec($ch));
-        curl_close($ch);
-        $pattern = $results->pattern;
+
+        // $ch = curl_init();
+        // curl_setopt($ch, CURLOPT_URL,$url);
+        // curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+        // curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        // curl_setopt($ch, CURLOPT_USERPWD, "$login:$password");
+        // $results = json_decode(curl_exec($ch));
+        // curl_close($ch);
+
+        $client = new Client();
+        $res = $client->request('GET', $url, [
+            'auth' => [$login, $password]
+        ]);
+        $pattern = json_decode($res->getBody())->pattern;
+        
         return $pattern;
     }
 
