@@ -27,7 +27,7 @@ class PatternsController extends Controller
         $res = $client->request('GET', $url, [
             'auth' => [$login, $password]
         ]);
-        $patterns = json_decode($res->getBody())->patterns;
+        $patterns = array_reverse(json_decode($res->getBody())->patterns);
 
         return $patterns;
     }
