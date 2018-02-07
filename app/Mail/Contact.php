@@ -13,6 +13,7 @@ class Contact extends Mailable
 
     public $name;
     public $email;
+    public $subject;
     public $bodyMessage;
 
 
@@ -25,6 +26,7 @@ class Contact extends Mailable
     {
         $this->name = $data['name'];
         $this->email = $data['email'];
+        $this->subject = $data['subject'];
         $this->bodyMessage = $data['bodyMessage'];
     }
 
@@ -36,6 +38,7 @@ class Contact extends Mailable
     public function build()
     {
         return $this->view('emails.contact')
+                    ->subject($this->subject)
                     ->from($this->email, $this->name)
                     ->replyTo($this->email);
     }

@@ -37,12 +37,14 @@ class PagesController extends Controller
     	$request->validate([
             'name' => 'required',
             'email' => 'required|email',
+            'subject' => 'required',
             'bodyMessage' => 'required'
         ]);
 
         $data = [
             'name' => $request->name,
             'email' => $request->email,
+            'subject' => $request->subject,
             'bodyMessage' => $request->bodyMessage
         ];
 
