@@ -214,6 +214,17 @@ footer p {
   color: #FFF;
 }
 
+#about .card .card-link {
+  font-size: 1.5rem;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  color: #FFF;
+}
+
+#about .card .card-link:hover {
+  color: #B99057;
+}
+
 #contact {
   margin-bottom: 2rem;
 }

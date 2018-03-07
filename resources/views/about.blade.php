@@ -23,42 +23,54 @@
 
                         <div class="card col-lg-5">
                             <div class="card-body">
-                                <h4 class="text-center card-title">Knit or Crochet Design</h4>
+                                <h4 class="text-center card-title">
+                                    <a href="contact/design" class="card-link">Knit or Crochet Design</a>
+                                </h4>
                                 <p class="card-text">Judy works with yarn manufactures and companies to create elegant garments and designs.</p>
                             </div>
                         </div>
     
                         <div class="card col-lg-5">
                             <div class="card-body">
-                                <h4 class="text-center card-title">Teaching</h4>
+                                <h4 class="text-center card-title">
+                                    <a href="contact/teaching" class="card-link">Teaching</a>
+                                </h4>
                                 <p class="card-text">Judy will create a single session or series of knit or crochet classes for presentation to individuals or groups. Examples of classes include: beginning knit or crochet, reading charts, lace, fair isle, colorwork, socks, etc.</p>
                             </div>
                         </div>
     
                         <div class="card col-lg-5">
                             <div class="card-body">
-                                <h4 class="text-center card-title">Sample Knit or Crochet</h4>
+                                <h4 class="text-center card-title">
+                                    <a href="contact/sample" class="card-link">Sample Knit or Crochet</a>
+                                </h4>
                                 <p class="card-text">Knit or crochet a sample of your design. Need an additional piece to send with a trunk show? Or an item test knit or crocheted before the pattern is release? Designers can hire Judy to knit or crochet a sample of your design.</p>
                             </div>
                         </div>
 
                         <div class="card col-lg-5">
                             <div class="card-body">
-                                <h4 class="text-center card-title">Custom Knit or Crochet</h4>
+                                <h4 class="text-center card-title">
+                                    <a href="contact/custom" class="card-link">Custom Knit or Crochet</a>
+                                </h4>
                                 <p class="card-text">Have a design you'd like made, but don't have the time? Judy will work with you to determin yarn, labor costs and timelines.</p>
                             </div>
                         </div>
     
                         <div class="card col-lg-5">
                             <div class="card-body">
-                                <h4 class="text-center card-title">Tech and Copy Editing</h4>
+                                <h4 class="text-center card-title">
+                                    <a href="contact/editing" class="card-link">Tech and Copy Editing</a>
+                                </h4>
                                 <p class="card-text">Ensure your pattern is ready for publishing by having Judy as a second set of eyes to proofread, tech and copy edit, as well as checking the numbers to make sure they work.</p>
                             </div>
                         </div>
 
                         <div class="card col-lg-5">
                             <div class="card-body">
-                                <h4 class="text-center card-title">Repair Knit or Crocheted Items</h4>
+                                <h4 class="text-center card-title">
+                                    <a href="contact/repair" class="card-link">Repair Knit or Crocheted Items</a>
+                                </h4>
                                 <p class="card-text">Have an item that has a hole or is a bit worn out? Judy has the skills to repair it for you.</p>
                             </div>
                         </div>

@@ -21,4 +21,16 @@ Route::get('/about', 'PagesController@getAbout');
 
 Route::get('/contact', 'PagesController@getContact');
 
+Route::get('/contact/design', 'PagesController@getContactDesign');
+
+Route::get('/contact/teaching', 'PagesController@getContactTeaching');
+
+Route::get('/contact/sample', 'PagesController@getContactSample');
+
+Route::get('/contact/custom', 'PagesController@getContactCustom');
+
+Route::get('/contact/editing', 'PagesController@getContactEditing');
+
+Route::get('/contact/repair', 'PagesController@getContactRepair');
+
 Route::post('/contact', 'PagesController@postContact');

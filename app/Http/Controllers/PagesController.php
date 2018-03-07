@@ -28,8 +28,63 @@ class PagesController extends Controller
     {
     	$page = 'contact';
         $title = 'Contact the Artist';
+        $subject = null;
 
-        return view('contact', compact(['page', 'title']));
+        return view('contact', compact(['page', 'title', 'subject']));
+    }
+
+    public function getContactDesign() 
+    {
+        $page = 'contact';
+        $title = 'Contact the Artist';
+        $subject = 'Inquiry: Knit or Crochet Design';
+
+        return view('contact', compact(['page', 'title', 'subject']));
+    }
+
+    public function getContactTeaching() 
+    {
+        $page = 'contact';
+        $title = 'Contact the Artist';
+        $subject = 'Inquiry: Teaching';
+
+        return view('contact', compact(['page', 'title', 'subject']));
+    }
+
+    public function getContactSample() 
+    {
+        $page = 'contact';
+        $title = 'Contact the Artist';
+        $subject = 'Inquiry: Sample Knit or Crochet';
+
+        return view('contact', compact(['page', 'title', 'subject']));
+    }
+
+    public function getContactCustom() 
+    {
+        $page = 'contact';
+        $title = 'Contact the Artist';
+        $subject = 'Inquiry: Custom Knit or Crochet';
+
+        return view('contact', compact(['page', 'title', 'subject']));
+    }
+
+    public function getContactEditing() 
+    {
+        $page = 'contact';
+        $title = 'Contact the Artist';
+        $subject = 'Inquiry: Tech and Copy Editing';
+
+        return view('contact', compact(['page', 'title', 'subject']));
+    }
+
+    public function getContactRepair() 
+    {
+        $page = 'contact';
+        $title = 'Contact the Artist';
+        $subject = 'Inquiry: Repair Knit or Crochet Items';
+
+        return view('contact', compact(['page', 'title', 'subject']));
     }
 
     public function postContact(Request $request) 
