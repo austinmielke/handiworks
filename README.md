@@ -1,3 +1,2 @@
-# handiworks
-
-This is a commission project for a friend showcasing her work pertaining to knitting.
+# Handiworks Ltd.
+This is a site built for Judy Ellis to showcase her knitting designs and to market her commission knitting work. The live site can be found [here](https://handiworksltd.com/about).
