@@ -3,10 +3,9 @@
 @section('content')
 
     <section class="container" id="contact">
-        <div class="row">
-        
-            <div class="col-sm-12 col-md-8">
-                <h1 class="text-center">{{ $title }}</h1>
+        <div class="row">   
+            <h1 class="text-center">{{ $title }}</h1>
+            <!-- <div class="col-sm-12 col-md-8">
                 <form class="mb-4" action="{{ url('contact') }}" method="POST">
                     {{ csrf_field() }}
 
@@ -43,10 +42,16 @@
                     <button class="btn btn-success">Send Message</button>
 
                 </form>
-            </div>
-
-            <div class="col">
+            </div> -->
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6">
                 <ul>
+                <li>
+                        <a href="mailto:handiworksltd@gmail.com" target="_blank">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Email
+                        </a>
+                    </li>
                     <li>
                         <a href="http://www.ravelry.com/designers/handiworks-ltd" target="_blank">
                             <i class="fa fa-ravelry" aria-hidden="true"></i> Ravelry
@@ -69,7 +74,6 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </section>
 
