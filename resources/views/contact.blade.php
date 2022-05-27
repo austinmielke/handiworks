@@ -3,7 +3,7 @@
 @section('content')
 
     <section class="container" id="contact">
-        <div class="row">   
+        <div class="row justify content center">   
             <h1 class="text-center">{{ $title }}</h1>
             <!-- <div class="col-sm-12 col-md-8">
                 <form class="mb-4" action="{{ url('contact') }}" method="POST">
